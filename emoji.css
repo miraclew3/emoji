@@ -16,7 +16,7 @@
 }
 
 .emoji-button .emoji-container .emoji .icon:active {
-    transform: scale(0.8, 0.8) translate(0, -6px);
+    transform: scale(0.8, 0.8) translate(0, -6px) !important;
 }
 .emoji-button {
   background: #fff;
