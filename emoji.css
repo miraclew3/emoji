@@ -1,4 +1,23 @@
+.emoji-section .emoji .icon:hover:after {
+    opacity: 1;
+}
+.emoji-section .emoji .icon:after {
+   text-align: center;
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    font-size: 32px;
+    content: attr(data-title);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 7px 32px;
+    border-radius: 12px;
+    opacity: 0;
+}
 
+.emoji-button .emoji-container .emoji .icon:active {
+    transform: scale(0.8, 0.8) translate(0, -6px);
+}
 .emoji-button {
   background: #fff;
   border: 0;
