@@ -19,17 +19,16 @@
     transform: scale(0.8, 0.8) translate(0, -6px) !important;
 }
 .emoji-button {
-  background: #fff;
-  border: 0;
-  /* padding: 10px 15px; */
-  position: absolute;
-  top: 200px;
-  right: 2%;
-  /* margin-right: 23px; */
-  border: 1px solid #dedede;
-  outline: none;
-  cursor: pointer;
-  border-radius: 12px;
+    background: #fff;
+    border: 0;
+    padding: 1px 6px;
+    position: absolute;
+    top: 171px;
+    right: 6%;
+    border: 1px solid #f3f3f3;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
 }
 .emoji-button span {
   color: #7f7f7f;
