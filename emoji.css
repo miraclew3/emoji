@@ -19,12 +19,12 @@
     transform: scale(0.8, 0.8) translate(0, -6px) !important;
 }
 .emoji-button {
-    background: #fff;
+   background: #fff;
     border: 0;
-    padding: 1px 6px;
+    padding: 0px 3px;
     position: absolute;
-    bottom: 10px;
-    right: 6%;
+    bottom: 4px;
+    right: 6px;
     border: 1px solid #f3f3f3;
     outline: none;
     cursor: pointer;
