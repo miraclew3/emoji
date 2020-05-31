@@ -33,6 +33,7 @@
 }
 .emoji-button span {
   color: #7f7f7f;
+  font-size: 14px;
 }
 .emoji-button span:before {
   content: "";
