@@ -13,6 +13,7 @@ $(document).ready(function(){
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
         _type = _this.attr('data-title');
         _number = _this.closest('.entry-img-div').next().find('.'+_type).next().text();
+	    console.log(_number);
         if( _number == undefined){
             _number = 1;
         } else {
