@@ -2,6 +2,8 @@ $(document).ready(function(){
     $('.comment').click(function(){
         _this = $(this);
         _id = _this.parent().parent().parent().parent().prev().text();
+        _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
+        console.log(_name);
         _type = _this.attr('data-title');
         $('#form_entry_id').val(_id);
         $('#form_entry_type').val(_type);
