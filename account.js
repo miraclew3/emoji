@@ -16,7 +16,7 @@ $(document).ready(function(){
         _like = _this.closest('.entry-img-div').next().find(".like").next().children('.comment-num').text();
         _love = _this.closest('.entry-img-div').next().find(".love").next().children('.comment-num').text();
         _sad = _this.closest('.entry-img-div').next().find(".sad").next().children('.comment-num').text();
-	_angry = _this.closest('.entry-img-div').next().find(".angry").next().children('.comment-num').text();
+	_angry = _this.closest('.entry-img-div').next().find(".angry").children('.comment-num').text();
         _haha = _this.closest('.entry-img-div').next().find(".haha").next().children('.comment-num').text();
         _wow = _this.closest('.entry-img-div').next().find(".wow").next().children('.comment-num').text();
          
