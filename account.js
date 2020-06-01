@@ -13,13 +13,14 @@ $(document).ready(function(){
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
         _type = _this.attr('data-title');
         _number = _this.closest('.entry-img-div').next().find('.'+_type).next().text();
-	    console.log(_number);
+	   
         if( typeof(_number) != "undefined" && _number !== null){
             _number = parseInt(_number) + 1;
         } else {
             _number = 1;
 
         }
+	     console.log(_number);
         $('#form_entry_id').val(_id);
 	    $('#form_entry_comment').val(_number);
         $('#form_entry_name').val(_name);
