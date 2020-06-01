@@ -5,7 +5,7 @@ $(document).ready(function(){
         _type = _this.attr('data-title');
         $('#form_entry_id').val(_id);
         $('#form_entry_type').val(_type);
-        $('#wf-form-comment_form').submit
+        $('#wf-form-comment_form').submit();
 
     });
 
