@@ -33,7 +33,6 @@ $(document).ready(function(){
              _wow = parseInt(_wow) +1;
         }
         $('#form_entry_id').val(_id);
-	    $('#form_entry_comment').val(_number);
         $('#form_entry_name').val(_name);  
         $('#entry_like').val();
         $('#entry_love').val(_love);
