@@ -19,6 +19,19 @@ $(document).ready(function(){
         _angry = _this.closest('.entry-img-div').next().find(".angry").next().text();
         _haha = _this.closest('.entry-img-div').next().find(".haha").next().text();
         _wow = _this.closest('.entry-img-div').next().find(".wow").next().text();
+        if(_class == 'like'){
+            _like = parseInt(_like) +1;
+        } elesif(_class == 'love'){
+             _love = parseInt(_love) +1;
+        } elseif(_class=='sad'){
+             _sad = parseInt(_sad) +1;
+        }elseif(_class=='angry'){
+             _angry = parseInt(_angry) +1;
+        }elseif(_class=='haha'){
+             _haha = parseInt(_haha) +1;
+        }elseif(_class=='wow'){
+             _wow = parseInt(_wow) +1;
+        }
         $('#form_entry_id').val(_id);
 	    $('#form_entry_comment').val(_number);
         $('#form_entry_name').val(_name);  
