@@ -14,7 +14,7 @@ $(document).ready(function(){
         _type = _this.attr('data-title');
         _number = _this.closest('.entry-img-div').next().find('.'+_type).next().text();
 	    console.log(_number);
-        if( _number == undefined){
+        if( _number == undefined || _number = ''){
             _number = 1;
         } else {
             _number = parseInt(_number) + 1;
