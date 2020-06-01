@@ -36,7 +36,7 @@ $(document).ready(function(){
         
         $('#form_entry_id').val(_id);
         $('#form_entry_name').val(_name);  
-        $('#entry_like').val();
+        $('#entry_like').val(_like);
         $('#entry_love').val(_love);
         $('#entry_haha').val(_haha);
         $('#entry_wow').val(_wow);
