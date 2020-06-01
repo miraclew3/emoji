@@ -1,4 +1,3 @@
-<script>
 $(document).ready(function(){
     $('.comment').click(function(){
         _this = $(this);
@@ -51,4 +50,4 @@ $(document).ready(function(){
 
 
 })
-</script>
+
