@@ -13,12 +13,12 @@ $(document).ready(function(){
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
         _type = _this.attr('data-title');
         _class = _type.toLowerCase()
-        _like = _this.closest('.entry-img-div').next().find(".like").next().text();
-        _love = _this.closest('.entry-img-div').next().find(".love").next().text();
-        _sad = _this.closest('.entry-img-div').next().find(".sad").next().text();
-        _angry = _this.closest('.entry-img-div').next().find(".angry").next().text();
-        _haha = _this.closest('.entry-img-div').next().find(".haha").next().text();
-        _wow = _this.closest('.entry-img-div').next().find(".wow").next().text();
+        _like = _this.closest('.entry-img-div').next().find(".like").next().children('.comment-num').text();
+        _love = _this.closest('.entry-img-div').next().find(".love").next().children('.comment-num').text();
+        _sad = _this.closest('.entry-img-div').next().find(".sad").next().children('.comment-num').text();
+	_angry = _this.closest('.entry-img-div').next().find(".angry").next().children('.comment-num').text();
+        _haha = _this.closest('.entry-img-div').next().find(".haha").next().children('.comment-num').text();
+        _wow = _this.closest('.entry-img-div').next().find(".wow").next().children('.comment-num').text();
          
          if(_class == 'love'){
              _love = parseInt(_love) +1;
