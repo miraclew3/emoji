@@ -20,7 +20,7 @@ $(document).ready(function(){
             _number = 1;
 
         }
-	if(_number.isNAN(NAN)){
+	if(isNAN(_number)){
 		_number = 1;
 	};
         $('#form_entry_id').val(_id);
