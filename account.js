@@ -1,4 +1,12 @@
 $(document).ready(function(){
+    
+    $('.s-icon').hover(function(){
+        var _this= $(this);
+        var comment_num = _this.next().text();
+        _this.attr('data-title',comment_num);
+	});
+    
+    
     $('.comment').click(function(){
         _this = $(this);
         _id = _this.parent().parent().parent().parent().prev().text();
