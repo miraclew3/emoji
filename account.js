@@ -20,7 +20,9 @@ $(document).ready(function(){
             _number = 1;
 
         }
-	if(isNAN(_number)) number = 1;
+	if(_number.isNAN(NAN)){
+		_number = 1;
+	};
         $('#form_entry_id').val(_id);
 	    $('#form_entry_comment').val(_number);
         $('#form_entry_name').val(_name);
