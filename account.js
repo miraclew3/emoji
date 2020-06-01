@@ -18,7 +18,7 @@ $(document).ready(function(){
         if( _number == undefined){
             _number = 1;
         } else {
-            _number = (int)_number + 1;
+            _number = parseInt(_number) + 1;
 
         }
         $('#form_entry_id').val(_id);
