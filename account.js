@@ -11,8 +11,6 @@ $(document).ready(function(){
         _this = $(this);
         _id = _this.parent().parent().parent().parent().prev().text();
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
-        
-        console.log(_number);
         _type = _this.attr('data-title');
         _number = _this.closest('.entry-img-div').next().find('.'+_type).next().text();
         if( _number == undefined){
