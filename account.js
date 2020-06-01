@@ -15,6 +15,7 @@ $(document).ready(function(){
         console.log(_number);
         _type = _this.attr('data-title');
         $('#form_entry_id').val(_id);
+	$('#form_entry_comment').val(_number);
         $('#form_entry_name').val(_name);
         $('#form_entry_type').val(_type);
         $('#wf-form-comment_form').submit();
