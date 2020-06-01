@@ -12,8 +12,9 @@ $(document).ready(function(){
         _id = _this.parent().parent().parent().parent().prev().text();
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
         _type = _this.attr('data-title');
-        _number = _this.closest('.entry-img-div').next().html();
-	    console.log(_number)  
+        _class = _type.toLowerCase()
+        _number = _this.closest('.entry-img-div').next().find("."+_class).html();
+	    
         if( typeof(_number) != "undefined" && _number !== null){
             _number = parseInt(_number) + 1;
         } else {
