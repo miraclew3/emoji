@@ -13,18 +13,21 @@ $(document).ready(function(){
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
         _type = _this.attr('data-title');
         _class = _type.toLowerCase()
-        _number = _this.closest('.entry-img-div').next().find("."+_class).next().text();
-	    console.log(_number);
-        if( typeof(_number) != "undefined" && _number !== null){
-            _number = parseInt(_number) + 1;
-        } else {
-            _number = 1;
-
-        }
+        _like = _this.closest('.entry-img-div').next().find(".like").next().text();
+        _love = _this.closest('.entry-img-div').next().find(".love").next().text();
+        _sad = _this.closest('.entry-img-div').next().find(".sad").next().text();
+        _angry = _this.closest('.entry-img-div').next().find(".angry").next().text();
+        _haha = _this.closest('.entry-img-div').next().find(".haha").next().text();
+        _wow = _this.closest('.entry-img-div').next().find(".wow").next().text();
         $('#form_entry_id').val(_id);
 	    $('#form_entry_comment').val(_number);
-        $('#form_entry_name').val(_name);
-        $('#form_entry_type').val(_type);
+        $('#form_entry_name').val(_name);  
+        $('#entry_like').val();
+        $('#entry_love').val(_love);
+        $('#entry_haha').val(_haha);
+        $('#entry_wow').val(_wow);
+        $('#entry_angry').val(_angry);
+        $('#entry_sad').val(_sad);      
         $('#wf-form-comment_form').submit();
 
     });
