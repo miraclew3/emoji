@@ -11,11 +11,18 @@ $(document).ready(function(){
         _this = $(this);
         _id = _this.parent().parent().parent().parent().prev().text();
         _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
-        _number = _this.closest('.entry-img-div').next().find('.like').next().text();
+        
         console.log(_number);
         _type = _this.attr('data-title');
+        _number = _this.closest('.entry-img-div').next().find('.'+_type).next().text();
+        if( _number == undefined){
+            _number = 1;
+        } else {
+            _number = (int)_number + 1;
+
+        }
         $('#form_entry_id').val(_id);
-	$('#form_entry_comment').val(_number);
+	    $('#form_entry_comment').val(_number);
         $('#form_entry_name').val(_name);
         $('#form_entry_type').val(_type);
         $('#wf-form-comment_form').submit();
