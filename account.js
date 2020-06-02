@@ -42,9 +42,15 @@ $(document).ready(function(){
         $('#entry_wow').val(_wow);
         $('#entry_angry').val(_angry);
         $('#entry_sad').val(_sad);      
-        $('#wf-form-comment_form').submit();
-	location.reload(true);
-
+	$(function() {
+	    $('#wf-form-comment_form').on('submit', function(e) {
+		  e.preventDefault();
+		  setTimeout(function() {
+		       window.location.reload();
+		  },0);
+		  this.submit();
+	    });
+	});    
     });
 
     $(".add-repre-btn").on("click",function(){
