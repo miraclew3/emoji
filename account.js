@@ -41,7 +41,8 @@ $(document).ready(function(){
         $('#entry_haha').val(_haha);
         $('#entry_wow').val(_wow);
         $('#entry_angry').val(_angry);
-        $('#entry_sad').val(_sad);        
+        $('#entry_sad').val(_sad);   
+	$('#wf-form-comment_form').submit();  
     });
 
     $(".add-repre-btn").on("click",function(){
