@@ -2268,7 +2268,7 @@ display:none;
   transform: scale(0.4, 0.4) translate(0, 0);
   transition: transform 200ms ease;
 }
-//fb share buttton
+
 .fb-button{
   ackground: #fff;
     border: 0;
