@@ -9,8 +9,8 @@ $(document).ready(function(){
     
     $('.comment').click(function(){
         _this = $(this);
-        _id = _this.parent().parent().parent().parent().prev().text();
-        _name = _this.parent().parent().parent().parent().parent().prev().find('p').text();
+        _id = _this.closest('.entry-img-div').find('.diary-id').text()
+        _name = _this.closest('.entry-img-div').prev().find('.etnry-item-title').text()
         _type = _this.attr('data-title');
         _class = _type.toLowerCase()
         _like = _this.closest('.entry-img-div').next().find(".like").next().children('.comment-num').text();
