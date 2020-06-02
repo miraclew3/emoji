@@ -12,9 +12,7 @@ $(document).ready(function(){
         var _title = _this.closest('.entry-img-div').prev().find('p').text();
         window.open('https://www.facebook.com/sharer/sharer.php?u='+shareurl+'&t='+_title, '', 
         'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
-        return false;
-
-        
+        return false;        
     });
     
     

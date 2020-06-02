@@ -2270,8 +2270,8 @@ display:none;
 }
 
 .fb-button{
-  ackground: #fff;
-    border: 0;
+    background: #fff;
+    border: 0px;
     padding: 0px 3px;
     position: absolute;
     bottom: 4px;
