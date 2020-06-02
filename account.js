@@ -43,6 +43,7 @@ $(document).ready(function(){
         $('#entry_angry').val(_angry);
         $('#entry_sad').val(_sad);      
         $('#wf-form-comment_form').submit();
+	location.reload(true);
 
     });
 
