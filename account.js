@@ -38,46 +38,6 @@ $(document).ready(function(){
             $('#c_entry_private').click()
         }         
     });
-    
-    
-    // $('.comment').click(function(){
-    //     _this = $(this);
-    //     _id = _this.closest('.entry-img-div').find('.diary-id').text()
-    //     _name = _this.closest('.entry-img-div').prev().find('.etnry-item-title').text()
-    //     _type = _this.attr('data-title');
-    //     _class = _type.toLowerCase()
-    //     _like = _this.closest('.entry-img-div').next().find(".like").next().children('.comment-num').text();
-    //     _love = _this.closest('.entry-img-div').next().find(".love").next().children('.comment-num').text();
-    //     _sad = _this.closest('.entry-img-div').next().find(".sad").next().children('.comment-num').text();
-	// _angry = _this.closest('.entry-img-div').next().find(".angry").children('.comment-num').text();
-    //     _haha = _this.closest('.entry-img-div').next().find(".haha").next().children('.comment-num').text();
-    //     _wow = _this.closest('.entry-img-div').next().find(".wow").next().children('.comment-num').text();
-         
-    //      if(_class == 'love'){
-    //          _love = parseInt(_love) +1;
-    //     } else if(_class=='sad'){
-    //          _sad = parseInt(_sad) +1;
-    //     }else if(_class=='angry'){
-    //          _angry = parseInt(_angry) +1;
-    //     }else if(_class=='haha'){
-    //          _haha = parseInt(_haha) +1;
-    //     }else if(_class=='wow'){
-    //          _wow = parseInt(_wow) +1;
-    //     }else if(_class == 'like'){
-    //         _like = parseInt(_like) +1;
-    //     }
-        
-    //     $('#form_entry_id').val(_id);
-    //     $('#form_entry_name').val(_name);  
-    //     $('#entry_like').val(_like);
-    //     $('#entry_love').val(_love);
-    //     $('#entry_haha').val(_haha);
-    //     $('#entry_wow').val(_wow);
-    //     $('#entry_angry').val(_angry);
-    //     $('#entry_sad').val(_sad);   
-	// $('#wf-form-comment_form').submit();  
-    // });
-
     $(".add-repre-btn").on("click",function(){
         if(	$("#wf-form-repre-add").css('display')== 'none'){
         $("#wf-form-repre-add").fadeIn();
