@@ -21,7 +21,7 @@ $(document).ready(function(){
 
     $('.entry-edit-btn').click(function(){
         _this = $(this);
-        _id = _this.parent().preve().children('.diary-id').text();
+        _id = _this.parent().prev().children('.diary-id').text();
         _title =  _this.parent().prev().prev().find('p').text();
         _date =  _this.parent().prev().prev().find('h4').text();
         _content =  _this.parent().prev().prev().find('.entry-content').text();
