@@ -19,7 +19,7 @@ $(document).ready(function(){
         return false;        
     });
 
-    $('.entry-edit-but').click(function(){
+    $('.entry-edit-btn').click(function(){
         _this = $(this);
         _id = _this.parent().preve().children('.diary-id').text();
         _title =  _this.parent().prev().prev().find('p').text();
