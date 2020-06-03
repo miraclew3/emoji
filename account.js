@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $('.fb-button').click(function(){
+    $('.fb-button').on('click',function(){
         _this = $(this);
         var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().children().attr('href');
         var _title = _this.closest('.entry-img-div').prev().find('p').text();
@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
 
-    $('.emoji-button').click(function(){
+    $('.emoji-button').on('click',function(){
         _this = $(this);
         var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().children().attr('href');
         $('#copy_clip').val(shareurl);
@@ -19,7 +19,7 @@ $(document).ready(function(){
         return false;        
     });
 
-    $('.entry-edit-btn').click(function(){
+    $('.entry-edit-btn').on('click',function(){
         _this = $(this);
         _id = _this.parent().prev().children('.diary-id').text();
         _title =  _this.parent().prev().prev().find('p').text();
