@@ -12,8 +12,8 @@ $(document).ready(function(){
 
     $('.emoji-button').click(function(){
         _this = $(this);
-        _id = _this.closest('.entry-img-div').find('.diary-id').text();
-        $('#copy_clip').val(_id);
+        var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().next().children().attr('href');
+        $('#copy_clip').val(shareurl);
         $('#copy_clip').select();
         document.execCommand("copy");
         return false;        
