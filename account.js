@@ -28,9 +28,10 @@ $(document).ready(function(){
         _entry_type =  _this.parent().prev().prev().find('.entry-type').text();
         _uid = $('account-page-id').val();
         $('#c_entry_title').val(_title);
-        $('#c_entry_content').val(_id);
+        $('#c_entry_content').val(_content);
         $('#c_entry_uid').val(_uid);
         $('#c_entry_itemid').val(_id);
+        $('#c_entry_date').val(_date);
         if(_entry_type == 1 ){
             $('#c_entry_public').click()
         } else {
