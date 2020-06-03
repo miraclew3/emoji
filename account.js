@@ -35,9 +35,7 @@ $(document).ready(function(){
             $('#c_entry_public').click()
         } else {
             $('#c_entry_private').click()
-        }
-        return false;
-         
+        }         
     });
     
     
