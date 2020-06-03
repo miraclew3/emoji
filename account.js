@@ -19,6 +19,15 @@ $(document).ready(function(){
         return false;        
     });
 
+    $('#c_entry_public').on('click', function(){
+        $('.entry-memorial-select').css('display','block');
+    });
+
+    $('#c_entry_private').on('click', function(){
+        $('.entry-memorial-select').css('display','none');
+
+    });
+
     $('.entry-edit-btn').on('click',function(){
         _this = $(this);
         _id = _this.parent().prev().children('.diary-id').text();
