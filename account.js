@@ -10,7 +10,7 @@ $(document).ready(function(){
     });
 
 
-    $('.fb-button').click(function(){
+    $('.emoji-button').click(function(){
         _this = $(this);
         _id = _this.closest('.entry-img-div').find('.diary-id').text();
         $('#copy_clip').val('_id');
