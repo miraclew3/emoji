@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.emoji-button').click(function(){
         _this = $(this);
         _id = _this.closest('.entry-img-div').find('.diary-id').text();
-        $('#copy_clip').val('_id');
+        $('#copy_clip').val(_id);
         $('#copy_clip').select();
         document.execCommand("copy");
         return false;        
