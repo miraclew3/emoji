@@ -18,6 +18,27 @@ $(document).ready(function(){
         document.execCommand("copy");
         return false;        
     });
+
+    $('.entry-edit-but').click(function(){
+        _this = $(this);
+        _id = _this.parent().preve().children('.diary-id').text();
+        _title =  _this.parent().prev().prev().find('p').text();
+        _date =  _this.parent().prev().prev().find('h4').text();
+        _content =  _this.parent().prev().prev().find('.entry-content').text();
+        _entry_type =  _this.parent().prev().prev().find('.entry-type').text();
+        _uid = $('account-page-id').val();
+        $('#c_entry_title').val(_title);
+        $('#c_entry_content').val(_id);
+        $('#c_entry_uid').val(_uid);
+        $('#c_entry_itemid').val(_id);
+        if(_entry_type == 1 ){
+            $('#c_entry_public').click()
+        } else {
+            $('#c_entry_private').click()
+        }
+        return false;
+         
+    });
     
     
     // $('.comment').click(function(){
