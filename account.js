@@ -19,11 +19,11 @@ $(document).ready(function(){
         return false;        
     });
 
-    $('.c_entry_public').on('click', function(){
+    $('.c-entry-public').on('click', function(){
         $('.entry-memorial-select').css('display','block');
     });
 
-    $('.c_entry_private').on('click', function(){
+    $('.c-entry-private').on('click', function(){
         $('.entry-memorial-select').css('display','none');
 
     });
