@@ -13,7 +13,7 @@ $(document).ready(function(){
     $('.emoji-button').on('click',function(){
         _this = $(this);
         var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().children('.view-diary-btn').attr('href');
-        $('#copy_clip').val(shareurl);
+        $('#copy_clip').text(shareurl);
         $('#copy_clip').select();
         document.execCommand("copy");
         return false;        
