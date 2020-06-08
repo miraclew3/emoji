@@ -2,8 +2,8 @@ $(document).ready(function(){
     
     $('.fb-button').on('click',function(){
         _this = $(this);
-        var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().children('.view-diary-btn').attr('href');
-        var _title = _this.closest('.entry-img-div').prev().find('.entry-item-title').text();
+        var shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btns-block').children('.view-diary-btn').attr('href');
+        var _title = _this.closest('.entry-box').find('.entry-item-header-wrap').children('.entry-item-title').attr('href');
         window.open('https://www.facebook.com/sharer/sharer.php?u='+shareurl+'&t='+_title, '', 
         'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
         return false;        
@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     $('.emoji-button').on('click',function(){
         _this = $(this);
-        var shareurl = window.location.hostname  + _this.closest('.entry-img-div').next().children('.view-diary-btn').attr('href');
+        var shareurl = window.location.hostname  + _this.closest('.entry-box').find('.entry-btns-block').children('.view-diary-btn').attr('href');
         $('#copy_clip').val(shareurl);
         $('#copy_clip').select();
         document.execCommand("copy");
@@ -30,11 +30,11 @@ $(document).ready(function(){
 
     $('.entry-edit-btn').on('click',function(){
         _this = $(this);
-        _id = _this.parent().prev().children('.diary-id').text();
-        _title =  _this.parent().prev().prev().find('.entry-item-title').text();
-        _date =  _this.parent().prev().prev().find('h4').text();
-        _content =  _this.parent().prev().prev().find('.entry-content').text();
-        _entry_type =  _this.parent().prev().prev().find('.entry-type').text();
+        _id = _this.parent().parent().find('entry-item-header-wrap').children('.entry-item-cid').text();
+        _title =  _this.parent().parent().find('entry-item-header-wrap').children('.entry-item-title').text();
+        _date =  _this.parent().parent().find('entry-item-header-wrap').children('.entry-item-date').text();
+        _content = _this.parent().parent().find('entry-item-header-wrap').children('.entry-content').text();
+        _entry_type =  _this.parent().parent().find('entry-item-header-wrap').children('.entry-type').text();
         _uid = $('account-page-id').val();
         $('#c_entry_title').val(_title);
         $('#c_entry_content').val(_content);
